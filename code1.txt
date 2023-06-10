@@ -1,0 +1,21 @@
+//writing a code to check whether length of input string is 140
+//and giving remaining length
+var input_str=prompt("You could write only 140 charcters.");
+var input_length=input_str.length;
+var remaining_input_length;
+var remaining_input_length=140-input_length;
+var extra_length=input_length-140;
+if (input_length<140)
+
+{
+    alert("You can still input"+ remaining_input_length+ "characters.");
+}
+else if ( input_length>140){
+    alert("You have entered "+extra_length+" extra character.");
+    alert("We are removing extra characters more than 140.");
+    alert("Allowed characters:"+input_str.slice(0,140)+".");
+}
+else 
+{
+alert("You have entered nothing.");
+}

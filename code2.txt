@@ -1,0 +1,9 @@
+var name=prompt("Insert Name:");
+var str=(name.slice(1,name.length)).toLowerCase();
+var uc=(name.slice(0,1)).toUpperCase();
+alert("Hello, "+uc+str+".");
+
+//making a dog age to human age converter
+var dogage=prompt("Enter the age of dog!!!");
+var humanageofdog=(dogage-2)*4+21;
+alert("The human age of dog is:"+humanageofdog);
