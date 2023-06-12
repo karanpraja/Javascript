@@ -1,3 +1,4 @@
+//Hello i have updated this code
 //writing a code to check whether length of input string is 140
 //and giving remaining length
 var input_str=prompt("You could write only 140 charcters.");
