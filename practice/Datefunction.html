@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Hours:</h1>
+    <script>
+        let hoursEl=document.getElementById("h1");
+        
+        function updatetime(){
+       let h= new Date();
+       h=h.getSeconds();
+hoursEl.innerText=`Seconds:${h}`
+        setTimeout(()=>{//here you should check how to use arrow function
+            updatetime();
+        });
+    }
+    updatetime();
+    </script>
+</body>
+</html>
