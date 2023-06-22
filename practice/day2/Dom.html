@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show()
+        {//we can also use
+            var name=document.name.name1.value;
+            // var name=document.getElementsByTagName("form").name.value;
+//we can also use document.getElementsByName() it will return array because of elements not element
+            alert("Welcome:"+name);
+            
+        }
+    </script>
+    <form class="form" name="name">
+        Enter Name:<input type="text" class="name" id="name" placeholder="enter text" name="name1">
+        <input type="button" value="click" onclick="show()">
+    </form>
+
+</body>
+</html>
