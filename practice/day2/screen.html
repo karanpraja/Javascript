@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="width">screen.width</p>
+    <p id="height">screen.height</p>
+    <p id="availheight">screen.availHeight</p>
+    <p id="pixeldepth">screen.pixelDepth</p>
+    <script>
+        function update(){
+
+        document.getElementById("width").innerText=screen.width;
+        document.getElementById("height").innerText=screen.height;
+        document.getElementById("availheight").innerText=screen.availHeight;
+        document.getElementById("pixeldepth").innerText=screen.pixelDepth;
+
+
+
+        setTimeout(()=>{
+            update();
+        })
+        }
+update();
+
+
+    </script>
+</body>
+</html>

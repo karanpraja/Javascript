@@ -1,0 +1,63 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>First JS</title>  
+<script>  
+var flag=true;  
+function commentform(){  
+var cform="<form action='Comment'>Enter Name:<br><input type='text' name='name'/><br/>  
+Enter Email:<br><input type='email' name='email'/><br>Enter Comment:<br/>  
+<textarea rows='5' cols='70'></textarea><br><input type='submit' value='Post Comment'/></form>";  
+if(flag){  
+document.getElementById("mylocation").innerHTML=cform;  
+flag=false;  
+}else{  
+document.getElementById("mylocation").innerHTML="";  
+flag=true;  
+}  
+}  
+</script>  
+</head>  
+<body>  
+<button onclick="commentform()">Comment</button>  
+<div id="mylocation"></div>  
+</body>  
+</html>  
+
+
+
+// <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <script>
+//         var flag=true;
+//        function open(){
+//        var c="<form action='comment'> Enter name: <input type="text" placeholder="enter your name"> <br> Enter email: <input type="text" placeholder="enter your email"> <br> <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea> </form> ";
+//     //    document.getElementById("target").innerHTML=c;
+//        if(flag)
+//        {
+//         document.getElementById("target").innerHTML=c;
+//         flag=false;
+//        }
+//        else
+//        {
+//         document.getElementById("target").innerHTML="";
+//         flag=true;
+
+//        }
+//        }
+//     </script>
+// </head>
+// <body>
+    
+    
+    
+//     <button onclick="open()">Comment</button>
+//     <div id="target">
+
+//     </div>
+// </body>
+// </html> -->
