@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //what object create does it replaces const s1=new student() and uses const s1=object.create(student);
+        const student={
+           
+            printdetails:function(){
+                document.write(`Id of the student is ${this.id} and age of the student is ${this.age}`);
+            }
+        };
+        const student2=Object.create(student);
+        student2.id="not alloted";
+        student2.age="not known";
+        student2.printdetails();//here was the mistake!!
+        //this second code is also useful
+//         function fruits(){
+// this.freshness="stale";
+// this.country="India";
+//         }
+//         function apple(){
+//             fruits.call(this);
+//         }
+//         apple.prototype=Object.create(fruits.prototype);//apple now contains fruits parameters
+//         const apple1=new apple();//creating a new object
+//         document.write(apple1.freshness,apple1.country);
+
+
+        
+    </script>
+</body>
+</html>

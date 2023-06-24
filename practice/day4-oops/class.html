@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{//another way to declare var student= class{}
+            constructor(collegename,year)
+            {
+                this.collegename=collegename;
+                this.year=year;
+         
+            }
+            detail(){
+            document.writeln(this.collegename+"         "+this.year);
+        }
+        }
+        
+        
+var karan=new student("NSUT",2);
+karan.detail();
+var rama=new student("IITD","infinite");
+rama.detail();
+
+    </script>
+
+</body>
+</html>

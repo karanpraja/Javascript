@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating boject by object literal
+        var employee={id:"outsider",name:"harish",age:13,country:"india"};
+        document.writeln(employee.id);
+        //creating object by object instance
+        var student=new Object();
+        student.name="Karan";
+        student.age="20";
+        student.country="India";
+        document.writeln(student.name+`\n`+student.age,student.country);
+        //creating object using constructor or fuction constructor
+        function Engineer(salary,role,tenure){
+this.salary=salary;
+this.tenure=tenure;
+this.role=role;
+        }
+        "</break>"
+        var shyam=new Engineer("1lakh/m","SDE1",4)
+        document.writeln(shyam.salary,"\n",shyam.role,shyam.tenure);
+    </script>
+</body>
+</html>
