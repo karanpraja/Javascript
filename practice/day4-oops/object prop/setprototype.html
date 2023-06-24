@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let car={
+        property1:"made up of steel",
+drive(){
+    return "You can drive!!";
+}
+
+    }
+    let toyota={
+        check(){
+            return "you can checkbefore driving";
+        }
+
+    }
+    Object.setPrototypeOf(toyota,car);//in toyota properties of car will be added!!
+    console.dir(toyota);
+    console.log(toyota.drive());
+    console.log(toyota.check());
+    document.writeln(Object.values(car));
+
+</script>
+</body>
+</html>

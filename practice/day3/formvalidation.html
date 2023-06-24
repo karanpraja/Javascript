@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function register(){
+    var nameEl=document.getElementById("name").value;
+    var passEl=document.getElementById("password").value;
+    var repassEl=document.getElementById("repassword").value;
+    // alert(nameEl.length);
+    if(nameEl==null||nameEl=="")
+    {
+        alert("You have not entered anthing!!")
+        return false
+    }
+    else if(passEl.length<6)
+    {
+        alert("Password in below limit")
+        return false;
+        
+    }
+    else if(passEl!=repassEl){
+        alert("You are not allowed to Enter!!")
+        return false;
+    }
+
+  }  
+    </script>
+    <form action="text" class="form" id="form">
+        Enter Name: <input type="text" name="name" id="name" placeholder="Enter Your name"> <br>
+        Enter Password: <input type="text" class="password" id="password" placeholder="Enter password">
+        <br>
+        Confirm Password: <input type="text" id="repassword" placeholder="confirm password"><br>
+        <input type="button" id="button" value="register" onclick="register()">
+
+    </form>
+    
+</body>
+</html>
