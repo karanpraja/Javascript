@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Programmar(id ,role){
+this.id=id,//in case of class we use : and in case of function we use =
+this.role=role
+        }
+        Programmar.prototype.skills="mlops"
+        let rama=new Programmar("xyz","sde");
+        document.writeln(rama.id,rama.role,rama.skills);
+    </script>
+</body>
+</html>

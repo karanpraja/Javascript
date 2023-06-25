@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         class parent{
+//              p1() {
+// return "parent class is invoked";
+// }
+// class child extends parent{
+
+// // }
+// var child1=new child();
+//         document.writeln(child1.p1());
+class parent2{
+
+}
+parent2.prototype.display=function()
+{
+return "parent2 class is invoked";
+}
+class child2 extends parent2{
+
+}
+    child2.prototype=Object.create(parent2);
+        
+       
+    var a=[new parent2(),new child2()];
+    a.forEach(function(msg){
+document.writeln(msg.display()+"<br>")
+    });
+    </script>
+</body>
+</html>

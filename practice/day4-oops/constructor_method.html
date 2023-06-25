@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+//         class CompanyName  
+// {  
+//   constructor()  
+//   {  
+//     this.company="Javatpoint";  
+//   }  
+// }  
+// class Employee extends CompanyName {  
+//   constructor(id,name) {  
+//    super();  
+//     this.id=id;  
+//     this.name=name;  
+//   }   
+// }     
+// var emp = new Employee(1,"John");  
+// document.writeln(emp.id+" "+emp.name+" "+emp.company);
+        class Tata{
+            constructor(){
+            this.companyName="TataIndustries";
+            }
+        }
+        class voltas extends Tata{
+            constructor(id,name){
+                super();
+                this.id=id;
+                this.name=name;
+               
+            }
+            
+        }
+        var employee=new voltas("11xc","Shyam");
+        document.writeln(employee.id,employee.name,employee.companyName);
+    </script>
+</body>
+</html>

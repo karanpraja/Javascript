@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+            var a=[1,2,3,4,5,6,7];
+document.writeln(a);
+// document.writeln(b);
+throw new error(`this error is created by me`);
+        }
+        catch(e)
+        {
+            alert("The error is but how "+ e.message);
+        }
+    </script>
+</body>
+</html>
