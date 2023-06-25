@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  ><!--onload="window.alert(`window is sucessfully loaded`)"--> 
+    <h1 onmouseover="mouseoverevent()" class="heading">heading</h1>
+    <input id="input" type="text" onfocus="focusevent()" >
+</br>
+
+   Press Keys: <input id="input1" type="text" onkeydown="key()" >
+   <br>
+<button class="button" id="button">click</button>
+<br>
+<p id="para"></p>
+
+    <script>
+        document.getElementById("button").addEventListener("click",event);
+        function event(){
+    document.getElementById("para").innerText="Event listener is working!!";
+}
+function mouseoverevent(){
+    // alert("You are hovering over heading.");
+    document.getElementsByClassName("heading").style.backgroundcolor="green";
+}
+
+function focusevent(){
+    document.getElementById("input").style.background="green";
+    // document.getElementByTagNameNS("input").style.background="yellow";
+};
+function key(){
+   console.log(document.getElementById("input1").value)
+}
+// function window(){
+// window.alert("Window is successfully loaded!!")
+//     alert("Window loaded")
+// }
+
+    </script>
+</body>
+</html>

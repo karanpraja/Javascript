@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+//         class laptop{
+//             constructor()
+//             {
+//                 this.quality="high";
+//             }
+//         }//prototyping is done incase of functions and super is use incase of classes
+//         class hp extends laptop{
+//             constructor(modelnumber,price)
+//             {
+//                 this.modelnumber=modelnumber;
+//                 this.price=price;
+//                 super();
+//             }
+//                 // super(laptop);
+//         }
+ 
+function bike(model,yom){
+    this.model=model;
+    this.yom=yom;
+}
+bike.prototype.getCompany=function(){
+    return "company";
+};
+function Vehicle(type){
+this.type=type;
+}
+var bike1=new bike("sdafcxc","2022");
+Vehicle.prototype=bike1;
+var Vehicle1=new Vehicle("bikebike");
+document.writeln(Vehicle1.type+"\n",Vehicle1.model+"\n",Vehicle1.yom+"\n");
+     </script>
+</body>
+</html>
+<!-- // var victus=new hp("x12vb3354","50,0000");
+// console.log(victus.modelnumber,victus.price);
+// class Bike  
+// {  
+//   constructor()  
+//   {  
+//     this.company="Honda";  
+//   }  
+// }  
+// class Vehicle extends Bike {  
+//   constructor(name,price) {  
+//    super();  
+//     this.name=name;  
+//     this.price=price;  
+//   }   
+// }  
+// var v = new Vehicle("Shine","70000");  
+// document.writeln(v.company+" "+v.name+" "+v.price);  -->
