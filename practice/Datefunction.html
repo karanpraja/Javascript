@@ -11,7 +11,7 @@
         let hoursEl=document.getElementById("h1");
         
         function updatetime(){
-       let h= new Date();
+       let h= new Date();//we use equal to in case of variable
        h=h.getSeconds();
 hoursEl.innerText=`Seconds:${h}`
         setTimeout(()=>{//here you should check how to use arrow function
