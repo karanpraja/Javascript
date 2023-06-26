@@ -24,12 +24,11 @@ parent2.prototype.display=function()
 return "parent2 class is invoked";
 }
 class child2 extends parent2{
-
+//since child has connection to parent class so it will make a connection and whatever I will call it  will check inside him+ parent class
 }
     child2.prototype=Object.create(parent2);
-        
-       
-    var a=[new parent2(),new child2()];
+
+   var a=[new parent2(),new child2()];
     a.forEach(function(msg){
 document.writeln(msg.display()+"<br>")
     });
