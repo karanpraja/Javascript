@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stock={//in case of functions we can't do it 
+            Fruits:["grapes","apple","Mango","orange"],
+            liquit:["ice","water"],
+            Holder:["cup","glass"],
+            Toppings:["peanut","chocolate"],
+        }
+      let is_the_shop_open=true;
+     let factory=(time,work)=>{
+        return new Promise((resolve,reject)=>{
+            if(is_the_shop_open){ 
+    setTimeout(()=>{
+        resolve(work())
+    },time);
+}
+else
+{
+    reject(console.log("the shop is closed"));
+}
+
+});
+     };
+      factory(2000,()=>console.log(`We will make ${stock.Fruits[1]} icecream`))
+      .then(()=>{
+        return factory(0000,()=>console.log("Production has started"));
+      })
+       
+   
+      
+    
+    </script>
+</body>
+</html>
