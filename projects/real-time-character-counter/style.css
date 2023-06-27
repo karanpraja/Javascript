@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    background: lightblue;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+.text-area{
+    resize: none;
+    box-sizing: border-box;/*it the box goes out of container then it will resize it */
+   width: 100%;
+
+    border-radius: 10px;
+
+}
+.container2{
+    font-size: 18px;
+    color: grey;
+    display: flex;
+    justify-content: space-between;/*how to make even spacing!!*/
+}
+.total_counter{
+    color: blue ;
+}
+.remaining_counter{
+    color: red;
+}
+

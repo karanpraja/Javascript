@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button{
+    background-color: pink;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.9);/*a = alpha for transparency*/
+    text-decoration: none;
+    color: black;
+    overflow: hidden ;
+    position: relative;/*parent should be relative to make child absolute*/
+}
+.button::before{
+position: absolute;/*this work when the parent is relative*/
+content: "";/*this to create box*/
+background-color: red;
+height: 0px;
+width:0px;
+left: var(--xPos);/*to position edge center*/
+/*to position edge center*/top:var(--yPos);
+transform: translate(-50%,-50%);
+border-radius: 50%;
+transition: width 0.4s, height 0.4s;
+}
+.button span{
+    position: relative;
+    z-index: 1;
+}
+.button:hover::before{ 
+height: 300px;
+width: 300px;
+    border-radius: 150 px;
+}
