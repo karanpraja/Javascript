@@ -7,32 +7,27 @@
 </head>
 <body>
     <script>
-        function employee(id,name){
-            var s_name=name;
-            var s_id=id;
-          
-            Object.defineProperty(this, "id",{
-get:function(){
-    return s_id;
-},
-set:function(s_id){
-    this.s_id=s_id;
-}
-});
-           
-Object.defineProperty(this,"name",
-{
-    get:function()
-{
-    return s_name;
-},
-set: function()
-{
-    this.s_name=s_name;
-}
-});
-
+function employee(id,name){
+    var s_id=id;
+    var s_name=name;
+    Object.defineProperty(this,"id",{
+        get: function(){
+return s_id;
+        },
+        set:function(s_id){
+            this.s_id=s_id;
         }
+
+    })
+    Object.defineProperty(this,"name",{
+        get:function(){
+            return s_name;
+        },
+        set:function(s_name){
+            this.s_name=s_name;
+        }
+    });
+}
         var employee1=new employee("2022A","Ramanunjan");
         document.writeln(employee1.id,employee1.name);
     </script>

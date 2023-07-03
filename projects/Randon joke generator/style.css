@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    background: yellow;
+    
+    width: 80vmin;/*concept learned*/
+    height: 50%;
+    box-shadow: 20px 20px 40px rgba(97,65,0,0.4);/*CL*/
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imogi{
+display: block;
+width: 100%;
+text-align: center;
+font-size: 100px;
+}
+p{
+    font-size: 16px;
+    color: black;
+    font-weight:100 ;
+    text-align: center;/*Application Learned*/
+    word-wrap: normal;
+    line-height: auto;
+    margin: 30px 0;
+    opacity: 1;
+}
+/* button{
+    
+    border: none;
+    background-color: orange;
+    padding: 2px 25px;
+    border-radius: 5px;
+    font-weight: 200;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+} */
+.fade{
+    opacity: 1;
+    transform: 0 1.5s;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+
+  /* Styling for the button when clicked */
+  .button:active {
+    /* background-color: #07520b; */
+    transform: translate(0, 0.1px) scale(0.95);
+  }
