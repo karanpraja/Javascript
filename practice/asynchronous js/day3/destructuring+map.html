@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+    name:"Rama",
+    age:15,
+    height:"175cm"
+};
+const person2={...person,name:"krishna"};//change name and keeps everything intact
+
+names.map((name)=>{
+    return name!="krishna";
+});
+
+//basic
+const arr=[1,2,3]
+const [a,b,c]=arr;
+console.log([a,b,c])
+VM1395:3 (3) [1, 2, 3]
+//1
+const arr = [1, 2, 3, 4, 5];
+const [, , c, , e] = arr;
+console.log(c, e); // Output: 3 5
+
+//using rest operator
+const arr=[1,2,3,4,5,6,7,8];
+const [a,b,c, ...rest]=arr;
+console.log(a,b,c,rest);//please use the right brackets!!
+VM2095:4 1 2 3 (5) [4, 5, 6, 7, 8]
+
+    </script>
+</body>
+</html>
